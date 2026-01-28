@@ -1,1 +1,31 @@
+/*
+=============================================================
+Create Database
+=============================================================
+Script Purpose:
+    This script creates a new database named 'DataWarehouse' after checking if it already exists. 
+    If the database exists, it is dropped and recreated.
+	
+WARNING:
+    Running this script will drop the entire 'DataWarehouse' database if it exists. 
+    All data in the database will be permanently deleted. Proceed with caution 
+    and ensure you have proper backups before running this script.
+*/
 
+
+USE master;
+GO
+
+
+-- Drop and re-create the 'DataWarehouse' database if it already exists
+IF EXISTS (SELECT 1 FROM sys.databases WHERE name = 'DataWarehouse')
+BEGIN
+    DROP DATABASE DataWarehouse;
+END;
+GO
+
+CREATE DATABASE DataWarehouse;
+GO
+
+USE DataWarehouse;
+GO
