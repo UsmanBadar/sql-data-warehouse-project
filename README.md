@@ -16,11 +16,14 @@ This project implements Data Warehouse using Medallion Architecture(Bronze, Silv
 ### Data Layers:
 ![Data Layers](docs/data_layers.jpg)
 
+### Data Flow:
+![Data Flow](docs/data_flow.jpg)
+
 ### Data Integration:
 ![Data Integration](docs/data_integration.jpg)
 
 ### Data Mart:
 ![Data Mart](docs/data_mart.jpg)
 
-### Data Catalog:
-![Data Catalog](docs/data_catalog.md) for this project.
+## Data Catalog:
+- [Data Catalog](docs/data_catalog.md) for this project.
